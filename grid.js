@@ -1,14 +1,18 @@
 var Grid = ( function() {
-    
+    var defaults = { count: 3, value: null };
+
+
     /**
      * `Grid` constructor function.
      */
-    function Grid( gridData ) {
-        if ( !gridData ) {
-            console.error( '`Grid()` invocation missing argument: `gridData`.' );
+    function Grid( options ) {
+        var settings = Object.assign( {}, defaults, options );
+
+        if ( !options ) {
+            console.error( '`Grid()` invocation missing argument: `options`.' );
         }
 
-        this.grid = _buildGrid( 3, false );
+        this.grid = _buildGrid( settings.count, settings.value );
 
         return this;
     }
