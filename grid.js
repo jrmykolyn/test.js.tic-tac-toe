@@ -26,7 +26,7 @@ var Grid = ( function() {
 
         // Ensure that rcvd. args. are of the correct type.
         if ( ( !user || typeof user !== 'object' ) || ( !coords || !Array.isArray( coords ) ) ) {
-            console.error( '`move()` method called with missing or invalid arguments.' );
+            console.error( '`update()` method called with missing or invalid arguments.' );
 
             return null;
         }
