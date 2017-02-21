@@ -49,6 +49,25 @@ var Grid = ( function() {
 
 
     /**
+     * ...
+     */
+    Grid.prototype.checkWin = function() {
+        /// TODO[@jrmykolyn] - Review 'win conditions' below, convert to control structure.
+
+        // IF `this.grid[ 0 ]` CONTAINS ALL 'x' || 'o' SYMBOLS.
+        // IF `this.grid[ 1 ]` CONTAINS ALL 'x' || 'o' SYMBOLS.
+        // IF `this.grid[ 2 ]` CONTAINS ALL 'x' || 'o' SYMBOLS.
+        // IF `this.grid[ 0 || 1 || 2 ][ 0 ]` CONTAINS ALL 'x' || 'o' SYMBOLS.
+        // IF `this.grid[ 0 || 1 || 2 ][ 1 ]` CONTAINS ALL 'x' || 'o' SYMBOLS.
+        // IF `this.grid[ 0 || 1 || 2 ][ 2 ]` CONTAINS ALL 'x' || 'o' SYMBOLS.
+        // IF `this.grid([ 0 ][ 0 ], [ 1 ][ 1 ], [ 2 ][ 2 ] )` CONTAINS ALL 'x' || 'o' SYMBOLS.
+        // IF `this.grid([ 0 ][ 2 ], [ 1 ][ 1 ], [ 2 ][ 0 ] )` CONTAINS ALL 'x' || 'o' SYMBOLS.
+
+        return null; /// TEMP
+    } // /checkWin()
+
+
+    /**
      * Private function, used to create the two-dimensional array which represents the game grid.
      */
     function _buildGrid( count, val ) {
