@@ -11,7 +11,7 @@ var Game = (function() {
         }
 
         // Validate presence of `players` key.
-        if ( !gameData.players || !Array.isArray( gameData.players() ) ) {
+        if ( !gameData.players || !Array.isArray( gameData.players ) ) {
             console.error( '`gameData` must include `players:Array<User>` key.');
 
             return null;
