@@ -8,7 +8,7 @@ var User = ( function() {
 
         // Validate presence of `name`.
         if ( !userData.name ) {
-            console.error( 'Options object passed to `User` constructor must a `name` key.' );
+            console.error( 'Options object passed to `User` constructor must have a `name` key.' );
             return this;
         }
 
